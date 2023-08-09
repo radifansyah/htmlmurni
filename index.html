@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* background-color: blue; */
+        }
+
+        .container {
+            background-color: red;
+            width: 250px;
+            /* box-sizing: border-box; */
+            height: 100vh;
+            /* position: relative; */
+            position: fixed;
+        }
+
+        .tengah {
+            width: 250px;
+            position: absolute;
+            top: 50%;
+            margin-top: -35px;
+
+            /* height: 300px; */
+
+            /* border: 1px solid black; */
+        }
+
+        button {
+            display: flex;
+            /* justify-content: center; */
+            margin-top: 4px;
+            width: 240px;
+            padding: 17px 15px;
+            /* position: absolute; */
+            /* align-items: center; */
+            /* justify-content: flex-start; */
+            /* margin-top: 40px; */
+            border: none;
+            /* margin: 4px 3px 0 3px; */
+            margin-left: 4px;
+            border-left: 4px solid blue;
+            margin-right: 4px;
+            transition: all ease-in .3s;
+            font-size: 18px;
+
+
+        }
+
+        button:hover {
+            border-left: 4px solid rgb(119, 204, 8);
+            transition: all ease-in .3s;
+            font-weight: bold;
+            background-color: green;
+            color: white;
+
+        }
+
+        img.a {
+            background-size: cover;
+            width: 100px;
+            /* aspect-ratio: 1; */
+
+            position: absolute;
+            top: 60px;
+            background-color: #fff;
+            border-radius: 50%;
+
+            left: 84px;
+        }
+
+        img.b {
+            width: 100px;
+            padding: 5px;
+            float: left;
+        }
+
+        h2 {
+            position: absolute;
+            top: 160px;
+            background-color: black;
+            padding: 9px;
+            box-sizing: border-box;
+
+            margin-top: 9px;
+            width: 240px;
+            text-align: center;
+            left: 5px;
+        }
+
+        .kanan {
+            position: absolute;
+            left: 300px;
+            overflow: scroll;
+            padding: 20px;
+
+        }
+
+
+        @media (max-width: 575.98px) {
+            .container {
+                display: none;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .tengah {
+                display: none;
+                overflow: hidden;
+
+                position: relative;
+            }
+
+            h2 {
+                display: none;
+                overflow: hidden;
+
+            }
+
+            img.a {
+                display: none;
+                overflow: hidden;
+
+            }
+
+            .kanan {
+                width: 100%;
+                position: relative;
+
+            }
+
+            h3 {
+                text-align: center;
+            }
+        }
+
+        img.c {
+            position: absolute;
+            top: 30px;
+            right: 0;
+            width: 140px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <img class="a" src="orang.png">
+        <h2 style="color: yellow;">Administrator</h2>
+        <div class="tengah">
+            <a href="#home"><button>Home</button></a>
+            <a href="#abouts"><button>About's</button></a>
+            <button>Contact</button>
+
+        </div>
+    </div>
+    <div class="kanan">
+        <section id="home"><br><br><br>
+            <h3>Welcome Aplikasi Home</h3><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dignissimos
+                perferendis omnis itaque quae
+                quam suscipit! Saepe quae ea, delectus cumque animi officiis aspernatur possimus accusantium
+                assumenda.
+                Numquam, libero minima.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum neque nobis laboriosam ratione quae
+                quibusdam perferendis vel animi pariatur accusantium. Quasi fuga fugiat praesentium sequi officia
+                voluptatum similique cupiditate sed debitis quod veritatis nam numquam itaque accusantium quas velit
+                recusandae consectetur impedit, esse dolorem, totam quisquam. Atque modi quaerat ut inventore
+                repudiandae iusto! Minima enim natus quibusdam aperiam non dicta?</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dignissimos
+                perferendis omnis itaque quae
+                quam suscipit! Saepe quae ea, delectus cumque animi officiis aspernatur possimus accusantium
+                assumenda.
+                Numquam, libero minima.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum neque nobis laboriosam ratione quae
+                quibusdam perferendis vel animi pariatur accusantium. Quasi fuga fugiat praesentium sequi officia
+                voluptatum similique cupiditate sed debitis quod veritatis nam numquam itaque accusantium quas velit
+                recusandae consectetur impedit, esse dolorem, totam quisquam. Atque modi quaerat ut inventore
+                repudiandae iusto! Minima enim natus quibusdam aperiam non dicta?</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum neque nobis laboriosam ratione quae
+                quibusdam perferendis vel animi pariatur accusantium. Quasi fuga fugiat praesentium sequi officia
+                voluptatum similique cupiditate sed debitis quod veritatis nam numquam itaque accusantium quas velit
+                recusandae consectetur impedit, esse dolorem, totam quisquam. Atque modi quaerat ut inventore
+                repudiandae iusto! Minima enim natus quibusdam aperiam non dicta?</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum neque nobis laboriosam ratione quae
+                quibusdam perferendis vel animi pariatur accusantium. Quasi fuga fugiat praesentium sequi officia
+                voluptatum similique cupiditate sed debitis quod veritatis nam numquam itaque accusantium quas velit
+                recusandae consectetur impedit, esse dolorem, totam quisquam. Atque modi quaerat ut inventore
+                repudiandae iusto! Minima enim natus quibusdam aperiam non dicta?</p>
+
+        </section><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section id="abouts"><br><br><br>
+            <h3>Welcome Aplikasi About's</h3><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dignissimos
+                perferendis omnis itaque quae
+                quam suscipit! Saepe quae ea, delectus cumque animi officiis aspernatur possimus accusantium
+                assumenda.
+                Numquam, libero minima.</p>
+            <img class="b" src="orang.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum neque nobis laboriosam ratione quae
+                quibusdam perferendis vel animi pariatur accusantium. Quasi fuga fugiat praesentium sequi officia
+                voluptatum similique cupiditate sed debitis quod veritatis nam numquam itaque accusantium quas velit
+                recusandae consectetur impedit, esse dolorem, totam quisquam. Atque modi quaerat ut inventore
+                repudiandae iusto! Minima enim natus quibusdam aperiam non dicta?</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dignissimos
+                perferendis omnis itaque quae
+                quam suscipit! Saepe quae ea, delectus cumque animi officiis aspernatur possimus accusantium
+                assumenda.
+                Numquam, libero minima.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum neque nobis laboriosam ratione quae
+                quibusdam perferendis vel animi pariatur accusantium. Quasi fuga fugiat praesentium sequi officia
+                voluptatum similique cupiditate sed debitis quod veritatis nam numquam itaque accusantium quas velit
+                recusandae consectetur impedit, esse dolorem, totam quisquam. Atque modi quaerat ut inventore
+                repudiandae iusto! Minima enim natus quibusdam aperiam non dicta?</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum neque nobis laboriosam ratione quae
+                quibusdam perferendis vel animi pariatur accusantium. Quasi fuga fugiat praesentium sequi officia
+                voluptatum similique cupiditate sed debitis quod veritatis nam numquam itaque accusantium quas velit
+                recusandae consectetur impedit, esse dolorem, totam quisquam. Atque modi quaerat ut inventore
+                repudiandae iusto! Minima enim natus quibusdam aperiam non dicta?</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum neque nobis laboriosam ratione quae
+                quibusdam perferendis vel animi pariatur accusantium. Quasi fuga fugiat praesentium sequi officia
+                voluptatum similique cupiditate sed debitis quod veritatis nam numquam itaque accusantium quas velit
+                recusandae consectetur impedit, esse dolorem, totam quisquam. Atque modi quaerat ut inventore
+                repudiandae iusto! Minima enim natus quibusdam aperiam non dicta?</p>
+
+        </section><br><br><br><br><br><br><br><br><br><br><br><br>
+        <img class="c" src="uncp.ico" alt="">
+
+
+</body>
+
+</html>
